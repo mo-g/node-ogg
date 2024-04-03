@@ -1,5 +1,8 @@
 /* config.h.  Generated from config.h.in by configure.  */
-/* config.h.in.  Generated from configure.in by autoheader.  */
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Do not build with CRC */
+/* #undef DISABLE_CRC */
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
@@ -31,33 +34,29 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
-
-/* Define to 1 if your C compiler doesn't accept -c and -o together. */
-/* #undef NO_MINUS_C_MINUS_O */
 
 /* Name of package */
 #define PACKAGE "libogg"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT ""
+#define PACKAGE_BUGREPORT "ogg-dev@xiph.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME ""
+#define PACKAGE_NAME "libogg"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING ""
+#define PACKAGE_STRING "libogg 1.3.5"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME ""
+#define PACKAGE_TARNAME "libogg"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION ""
+#define PACKAGE_VERSION "1.3.5"
 
 /* The size of `int', as computed by sizeof. */
 #define SIZEOF_INT 4
@@ -86,6 +85,9 @@
 /* The size of `uint32_t', as computed by sizeof. */
 #define SIZEOF_UINT32_T 4
 
+/* The size of `uint64_t', as computed by sizeof. */
+#define SIZEOF_UINT64_T 8
+
 /* The size of `u_int16_t', as computed by sizeof. */
 #define SIZEOF_U_INT16_T 2
 
@@ -96,7 +98,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "1.3.0"
+#define VERSION "1.3.5"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
